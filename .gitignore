@@ -6,3 +6,7 @@ jflex*.jar
 *.java~
 out
 build
+
+EmmyLua-Common/bin
+EmmyLua-LS/bin
+IntelliJ-Core/bin

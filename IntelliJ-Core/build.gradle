@@ -1,10 +1,11 @@
 apply plugin: "java"
+apply plugin: 'java-library'
 
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    compile fileTree(dir: "libs", include: "*.jar")
-    compile group: 'org.eclipse.lsp4j', name: 'org.eclipse.lsp4j', version: '0.20.0'
+    api fileTree(dir: 'libs', include: ['*.jar'])
+    api group: 'org.eclipse.lsp4j', name: 'org.eclipse.lsp4j', version: '0.20.0'
 }

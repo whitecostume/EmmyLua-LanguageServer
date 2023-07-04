@@ -186,6 +186,8 @@ abstract class TyClass(
 
                 return member?.guessType(context)
             }
+
+            else -> {}
         }
         return null
     }
