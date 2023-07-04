@@ -13,8 +13,17 @@ plugins {
     id 'com.github.johnrengelman.shadow' version '6.1.0' apply false
 }
 
+repositories {
+    mavenCentral()
+}
+
 apply plugin: "java"
 apply plugin: 'kotlin'
+apply plugin: 'java-library'
+
+dependencies {
+    api "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
+}
 
 def src = "D:/Git/OpenSource/EmmyLua/IntelliJ-EmmyLua/src/main/java/"
 def dst = file("EmmyLua-Common/src/main/java")
